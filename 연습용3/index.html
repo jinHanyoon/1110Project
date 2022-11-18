@@ -106,6 +106,8 @@
                 
                 )
 
+
+
           
                 
             $('.page02_button li').click(function(){
@@ -125,6 +127,19 @@
             
         }
             })
+
+            $('.page04_info li').hover(function(){
+                var page04 =$(this).index()
+                $('.page04_hidden').eq(page04).fadeIn()
+                $('.page04_hidden').eq(page04).addClass('on')
+                $('.page04_text h1').eq(page04).addClass('on')
+            },function(){
+                $('.page04_hidden').fadeOut(100)
+                $('.page04_text h1').removeClass('on')
+                $('.page04_hidden').removeClass('on')
+
+            }
+            )
 
             $(window).scroll(function(){
             let scrollTop = $(window).scrollTop()
@@ -156,6 +171,8 @@
            
 
             }
+
+
         })
 
 
@@ -302,6 +319,58 @@
         </section>
         <section class="page03_se">
             <div class="page03">
+                <ul class="page04_info">
+                    <li>
+                        <div class="page04_text">
+                        <h1>디자인</h1></div>
+                        <div class="page04_hidden">
+                            <h1>당신은 변합니다.</h1>
+                            <h1>아이폰은 맞춥니다</h1>
+                            <p>IPHONE</p>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="page04_text">
+                        <h1>속도</h1></div>
+                        <div class="page04_hidden">
+                            <h1>디자인만이 아닌 </h1>
+                            <h1> 더 빠른 속도</h1>
+                            <p>SAMSUNG</p>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="page04_text">
+                        <h1>성능</h1></div>
+                        <div class="page04_hidden">
+                            <h1>또 한번 핸드폰의</h1>
+                            <h1>새로운 길을 열다</h1>
+                            <p>IPHONE</p>
+
+
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="page04_text">
+                        <h1>선택</h1></div>
+                        <div class="page04_hidden">
+                            <h1>제 삶의 영원한 주제는</h1>
+                            <h1>바로 여러분입니다</h1>
+                            <p>SAMSUNG</p>
+
+
+                        </div>
+
+                    </li>
+
+
+                </ul>
+
         
                 <div class="page03_img">
                 
@@ -339,6 +408,7 @@
 
         </section>
 
+
         <footer>
             <div class="footerP">
                 <div class="footer_left">
@@ -360,6 +430,8 @@
 
             </div>
         </footer>
+
+
         <div class="log">
                <div class="log_text">
                 <p class="log_textP">X</p>
